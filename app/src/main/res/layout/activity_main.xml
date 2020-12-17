@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/linkAaja_Buttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explisit Intent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <Button
+        android:id="@+id/implisitIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Implisit Intent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linkAaja_Buttom" />
+
+    <Button
+        android:id="@+id/implisitIntentInDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Implisit Intent In Detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/implisitIntent" />
+
+    <Button
+        android:id="@+id/implisitIntentInChooseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Implisit Intent In Detail Choose Titie Label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/implisitIntentInDetail" />
+
+    <Button
+        android:id="@+id/implisitIntentInFilterManifest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="implicit intent filter android manifes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/implisitIntentInChooseTitle" />
+
+
+    <Button
+        android:id="@+id/implisitIntentToPlaystoreOrOpenAppas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intent Filter with to Playstore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/implisitIntentInFilterManifest" />
+
+    <Button
+        android:id="@+id/insetAContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intent Inset a Contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/implisitIntentToPlaystoreOrOpenAppas" />
+
+    <Button
+        android:id="@+id/readAContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intent Read a Contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insetAContact" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/readAContact" />
+
+    <Button
+        android:id="@+id/readAllContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intent Read All Contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
